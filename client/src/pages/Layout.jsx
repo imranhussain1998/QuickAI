@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
-import Sidebar from "../components/SideBar";
+import Sidebar from "../components/Sidebar";
 import { SignIn, useUser } from "@clerk/clerk-react";
 
 const Layout = () => {
