@@ -18,8 +18,18 @@ const navItems = [
   { to: "/ai/write-article", label: "Write Article", Icon: SquarePen },
   { to: "/ai/blog-titles", label: "Blog Titles", Icon: Hash },
   { to: "/ai/generate-images", label: "Generate Images", Icon: Image },
-  { to: "/ai/remove-background", label: "Remove Background", Icon: Eraser, premium: true },
-  { to: "/ai/remove-object", label: "Remove Object", Icon: Scissors, premium: true },
+  {
+    to: "/ai/remove-background",
+    label: "Remove Background",
+    Icon: Eraser,
+    premium: true,
+  },
+  {
+    to: "/ai/remove-object",
+    label: "Remove Object",
+    Icon: Scissors,
+    premium: true,
+  },
   { to: "/ai/review-resume", label: "Review Resume", Icon: FileText },
   { to: "/ai/community", label: "Community", Icon: Users },
 ];
@@ -70,9 +80,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
         </div>
       </div>
 
-      <div
-        className="w-full border-t border-gray-200 p-4 px-7 flex items-center justify-between"
-      >
+      <div className="w-full border-t border-gray-200 p-4 px-7 flex items-center justify-between">
         <div
           onClick={openUserProfile}
           className="flex gap-2 items-center cursor-pointer"
@@ -80,8 +88,8 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           <img src={user.imageUrl} className="w-8 rounded-full" alt="" />
           <div>
             <h1 className="text-sm font-medium">{user.fullName}</h1>
-            <p className="text-xs text-gray-500"> 
-              <protect plan ='premium' fallback = "free">Premium</protect> plan
+            <p className="text-xs text-gray-500">
+              plan details
             </p>
           </div>
         </div>

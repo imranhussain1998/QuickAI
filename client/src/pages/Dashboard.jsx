@@ -50,6 +50,7 @@ const Dashboard = () => {
 
   const isPremium = user?.publicMetadata?.plan === "premium";
 
+
   return (
     <div className="h-full overflow-y-auto p-6 bg-[#f9fafb]">
       {/* ---- Top Stats Cards ---- */}
@@ -74,19 +75,6 @@ const Dashboard = () => {
           </div>
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F43F5E] to-[#EC4899] flex justify-center items-center">
             <Heart className="w-5 text-white" />
-          </div>
-        </div>
-
-        {/* Active Plan */}
-        <div className="flex justify-between items-center w-72 p-4 bg-white rounded-xl border border-gray-200 shadow-sm">
-          <div className="text-slate-600">
-            <p className="text-sm font-medium">Active Plan</p>
-            <h2 className="text-2xl font-semibold">
-              {isPremium ? "Premium" : "Free"}
-            </h2>
-          </div>
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#9234EA] to-[#5A15C2] flex justify-center items-center">
-            <Gem className="w-5 text-white" />
           </div>
         </div>
       </div>
